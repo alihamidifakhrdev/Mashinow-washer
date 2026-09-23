@@ -1,0 +1,48 @@
+name: mashinow_carwash
+description: اپلیکیشن کارواش‌داران ماشینو — پنل مدیریت نوبت‌ها و درآمد کارواش
+publish_to: "none"
+version: 1.7.5+18
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # شبکه — همه از میرور pub.myket.ir قابل نصب هستند
+  dio: ^5.7.0
+  shared_preferences: ^2.3.2
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.0
+
+  # اسکنر بارکد کد رزرو (دوربین، MLKit آفلاین) — از میرور قابل نصب
+  mobile_scanner: ^5.2.3
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # :: فونت ایران‌یکان (نسخه وب رسمی FontIran، فارسی‌شمار FaNum)
+  #    ارقام لاتین به‌صورت خودکار فارسی رندر می‌شوند
+  fonts:
+    - family: IRANYekan
+      fonts:
+        - asset: assets/fonts/IRANYekanWebFaNum-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/IRANYekanWebFaNum-Light.ttf
+          weight: 300
+        - asset: assets/fonts/IRANYekanWebFaNum-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IRANYekanWebFaNum-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IRANYekanWebFaNum-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/IRANYekanWebFaNum-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/IRANYekanWebFaNum-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/IRANYekanWebFaNum-Black.ttf
+          weight: 900
